@@ -25,3 +25,6 @@ class LinkedList:
 
     def last(self):
         return self
+
+    def append(self, node):
+        self.next = node
