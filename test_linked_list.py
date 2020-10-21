@@ -69,16 +69,16 @@ class TestLinkedList(unittest.TestCase):
         ll = LinkedList(fake_value())
         self.assertFalse(ll.is_sentinel())
 
-    # """
-    # Empty List
-    # """
+    """
+    Empty List
+    """
 
-    # def test_empty(self):
-    #     """
-    #     A list is initially empty.
-    #     """
-    #     ll = LinkedList()
-    #     self.assertTrue(ll.is_empty())
+    def test_empty(self):
+        """
+        A list is initially empty.
+        """
+        ll = LinkedList()
+        self.assertTrue(ll.is_empty())
 
     # def test_not_empty(self):
     #     """
