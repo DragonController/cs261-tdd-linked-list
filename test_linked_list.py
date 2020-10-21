@@ -50,17 +50,17 @@ class TestLinkedList(unittest.TestCase):
         ll = LinkedList()
         self.assertEqual(ll, ll.prev)
 
-    # """
-    # Sentinel Node
-    # """
+    """
+    Sentinel Node
+    """
 
-    # def test_sentinel_node(self):
-    #     """
-    #     A list node with a value of `None` is a sentinel node.
-    #     (See https://en.wikipedia.org/wiki/Sentinel_node)
-    #     """
-    #     ll = LinkedList()
-    #     self.assertTrue(ll.is_sentinel())
+    def test_sentinel_node(self):
+        """
+        A list node with a value of `None` is a sentinel node.
+        (See https://en.wikipedia.org/wiki/Sentinel_node)
+        """
+        ll = LinkedList()
+        self.assertTrue(ll.is_sentinel())
 
     # def test_not_sentinel_node(self):
     #     """
