@@ -18,4 +18,4 @@ class LinkedList:
         return self.value == None
 
     def is_empty(self):
-        return True
+        return self.next == self and self.prev == self
