@@ -22,3 +22,6 @@ class LinkedList:
 
     def is_last(self):
         return self.is_empty()
+
+    def last(self):
+        return self
