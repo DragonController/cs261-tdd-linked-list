@@ -133,7 +133,7 @@ class TestLinkedList(unittest.TestCase):
         appendee = LinkedList(fake_value())
         ll.append(appendee)
         self.assertEqual(ll, appendee.prev)
-
+    
     # def test_append_to_empty_list_sets_next_of_new_node_to_sentinel(self):
     #     """
     #     Appending to an empty list sets the new node's `next` to the sentinel.
