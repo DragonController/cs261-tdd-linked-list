@@ -28,3 +28,4 @@ class LinkedList:
 
     def append(self, node):
         self.next = node
+        self.prev = node
