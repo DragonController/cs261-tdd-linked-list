@@ -19,3 +19,6 @@ class LinkedList:
 
     def is_empty(self):
         return self.next == self and self.prev == self
+
+    def is_last(self):
+        return self.is_empty()
