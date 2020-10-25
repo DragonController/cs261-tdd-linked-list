@@ -56,3 +56,6 @@ class LinkedList:
                 return node
             node = node.next
         return None
+
+    def insert_in_order(self, ll):
+        self.append(ll)
