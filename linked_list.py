@@ -30,3 +30,4 @@ class LinkedList:
         self.next = node
         self.prev = node
         node.prev = self
+        node.next = self
