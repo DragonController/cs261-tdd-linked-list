@@ -58,4 +58,16 @@ class LinkedList:
         return None
 
     def insert_in_order(self, ll):
-        self.append(ll)
+        if self.is_empty():
+            self.append(ll)
+        else:
+            if self.next.value > ll.value:
+                self.insert(ll)
+            if self.prev.value < ll.value:
+                self.append(ll)
+            node = self.next
+            while not node == self:
+                if node.value < ll.value and node.next.value > ll.value:
+                    node.insert(ll)
+                    break
+                node = node.next
