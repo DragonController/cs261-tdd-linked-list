@@ -24,7 +24,7 @@ class LinkedList:
         return self.next.is_sentinel()
 
     def last(self):
-        return self
+        return self.prev
 
     def append(self, node):
         self.next = node
