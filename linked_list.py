@@ -31,3 +31,7 @@ class LinkedList:
         node.prev = self.prev
         self.prev = node
         node.next = self
+
+    def delete(self):
+        self.prev.next = self.next
+        self.next.prev = self.prev
