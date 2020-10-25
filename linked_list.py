@@ -27,8 +27,7 @@ class LinkedList:
         return self.prev
 
     def append(self, node):
-        self.last().next = node
-        node.prev = self.last()
-        if self.is_sentinel():
-            self.prev = node
-            node.next = self
+        self.prev.next = node
+        node.prev = self.prev
+        self.prev = node
+        node.next = self
