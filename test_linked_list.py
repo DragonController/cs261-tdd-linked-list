@@ -165,14 +165,14 @@ class TestLinkedList(unittest.TestCase):
         ll.append(appendee)
         self.assertFalse(ll.is_last())
 
-    # def test_second_of_two_nodes_is_last(self):
-    #     """
-    #     In a two-node list, the second node is last.
-    #     """
-    #     ll = LinkedList()
-    #     appendee = LinkedList(fake_value())
-    #     ll.append(appendee)
-    #     self.assertTrue(appendee.is_last())
+    def test_second_of_two_nodes_is_last(self):
+        """
+        In a two-node list, the second node is last.
+        """
+        ll = LinkedList()
+        appendee = LinkedList(fake_value())
+        ll.append(appendee)
+        self.assertTrue(appendee.is_last())
 
     # def test_last_of_two_nodes(self):
     #     """

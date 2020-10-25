@@ -21,7 +21,7 @@ class LinkedList:
         return self.next == self and self.prev == self
 
     def is_last(self):
-        return self.is_empty()
+        return self.next.is_sentinel()
 
     def last(self):
         return self
