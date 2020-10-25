@@ -42,3 +42,9 @@ class LinkedList:
         node.prev = self
         self.next.prev = node
         self.next = node
+
+    def at(self, index):
+        node = self
+        for _ in range(index):
+            node = node.next
+        return node
