@@ -253,20 +253,20 @@ class TestLinkedList(unittest.TestCase):
         ll.append(third_node)
         self.assertEqual(third_node, ll.prev)
 
-    # """
-    # Three-Node List
-    # """
+    """
+    Three-Node List
+    """
 
-    # def test_last_of_three_nodes(self):
-    #     """
-    #     In a three-node list, the third node is the last node.
-    #     """
-    #     ll = LinkedList()
-    #     second_node = LinkedList(fake_value())
-    #     third_node = LinkedList(fake_value())
-    #     ll.append(second_node)
-    #     ll.append(third_node)
-    #     self.assertEqual(third_node, ll.last())
+    def test_last_of_three_nodes(self):
+        """
+        In a three-node list, the third node is the last node.
+        """
+        ll = LinkedList()
+        second_node = LinkedList(fake_value())
+        third_node = LinkedList(fake_value())
+        ll.append(second_node)
+        ll.append(third_node)
+        self.assertEqual(third_node, ll.last())
 
     # def test_append_to_three_node_list(self):
     #     """
