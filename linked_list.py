@@ -49,11 +49,10 @@ class LinkedList:
             node = node.next
         return node
 
-
     def search(self, value):
-        node = self
-        for _ in range(index):
-            node = node.next
+        node = self.next
+        while not node == self:
             if node.value == value:
                 return node
+            node = node.next
         return None
