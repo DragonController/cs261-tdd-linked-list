@@ -57,7 +57,7 @@ class LinkedList:
             node = node.next
         return None
 
-    def insert_in_order(self, ll):
+    def insert_in_order(self, node):
         if self.is_empty():
             self.append(ll)
         else:
