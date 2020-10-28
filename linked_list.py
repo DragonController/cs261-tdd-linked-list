@@ -36,7 +36,6 @@ class LinkedList:
         self.prev.next = self.next
         self.next.prev = self.prev
 
-
     def insert(self, node):
         node.next = self.next
         node.prev = self
@@ -58,16 +57,11 @@ class LinkedList:
         return None
 
     def insert_in_order(self, node):
-        if self.is_empty():
-            self.append(ll)
-        else:
-            if self.next.value > ll.value:
-                self.insert(ll)
-            if self.prev.value < ll.value:
-                self.append(ll)
-            node = self.next
-            while not node == self:
-                if node.value < ll.value and node.next.value > ll.value:
-                    node.insert(ll)
-                    break
-                node = node.next
+        if self.is_empty() or self.prev.value < node.value:
+            self.append(node)
+        current_node = self.next
+        while not current_node == self:
+            if current_node.value > node.value:
+                current_node.append(node)
+                break
+            current_node = current_node.next
